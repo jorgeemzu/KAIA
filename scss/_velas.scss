@@ -1,0 +1,74 @@
+.velas {
+	margin-bottom: 4em;
+}
+
+.velas h2,
+.jabones h2 {
+	text-align: center;
+	margin: 4em 0;
+}
+
+.velas h4,
+.jabones h4 {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.product__grid {
+	display: grid;
+	gap: 4em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 7em;
+}
+
+.vela__img {
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+	height: clamp(500px, 60vh, 800px);
+}
+
+.beneficios {
+	position: absolute;
+	background-color: var(--gold);
+	width: 100%;
+	height: 100%;
+	padding: 2em;
+	transition: 1s all;
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+.beneficios ul {
+	color: var(--black);
+	margin-top: 2em;
+	font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.velas .gold__btn,
+.jabones .gold__btn {
+	width: clamp(130px, 40vw, 250px);
+	margin: 0 auto;
+	display: block;
+	font-size: clamp(1.5rem, 1vw, 2rem);
+	padding: 0.3em;
+	text-align: center;
+}
+
+.vela:hover,
+.jabon:hover {
+	.beneficios {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.jabones {
+	position: relative;
+}
+
+.padding {
+	padding-bottom: 4em;
+}

@@ -1,0 +1,84 @@
+header {
+	position: relative;
+}
+
+nav {
+	background-color: white;
+	padding: 1em 0;
+	animation-name: appear;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	width: clamp(60px, 10vw, 100px);
+}
+
+.hamburger__menu {
+	height: 3px;
+	width: 20px;
+	background-color: var(--gold);
+	position: relative;
+}
+
+.hamburger__menu::after,
+.hamburger__menu::before {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 20px;
+	background-color: var(--gold);
+}
+
+.hamburger__menu::after {
+	top: 7px;
+}
+
+.hamburger__menu::before {
+	top: -7px;
+}
+
+.hero {
+	background-image: url('/images/heroBG.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	// padding: 3em 0;
+}
+
+.hero .container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	height: 100%;
+}
+
+.hero__text {
+	width: clamp(182px, 60vw, 300px);
+	position: relative;
+	z-index: 10;
+	animation-name: appear;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+
+.hero__text .gold__btn {
+	margin-top: 1em;
+}
+
+.nav__menu--tem a {
+	transition: 1s all;
+}
+.nav__menu--tem a:hover {
+	color: var(--gold);
+}

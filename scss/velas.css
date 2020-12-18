@@ -1,0 +1,25 @@
+.product__grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 4em;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vela__img {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.beneficios {
+  position: absolute;
+  background-color: var(--gold);
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=velas.css.map */

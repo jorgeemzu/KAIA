@@ -1,0 +1,13 @@
+.kaia {
+	background-color: var(--lightGold);
+	padding: 2em 0;
+	position: relative;
+}
+
+.kaia__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2em;
+	align-items: center;
+	justify-items: center;
+}

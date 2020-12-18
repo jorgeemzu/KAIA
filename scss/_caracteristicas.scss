@@ -1,0 +1,30 @@
+.caracteristicas {
+	margin-top: 4em;
+	position: relative;
+}
+
+.carac__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 4em;
+	justify-items: center;
+	align-items: center;
+	margin-top: 6em;
+	padding-bottom: 4em;
+}
+
+.carac__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.carac__icon {
+	width: clamp(100px, 25vw, 1500px);
+	height: clamp(100px, 25vh, 1500px);
+}
+
+.caracteristicas p {
+	text-align: center;
+}

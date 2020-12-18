@@ -1,0 +1,125 @@
+@media screen and (max-width: 800px) {
+	.nav__desktop,
+	.nav__social.desktop {
+		display: none;
+	}
+
+	.nav__mobile {
+		background-color: var(--black);
+		position: absolute;
+		width: 70vw;
+		height: 150vh;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		transition: 1s all;
+		transform: translateX(200vw);
+		opacity: 0;
+	}
+
+	.nav__menu {
+		padding: 4em 2em;
+	}
+
+	nav .nav__social {
+		padding: 0 2em;
+	}
+
+	.nav__social--item + .nav__social--item {
+		margin-top: 1em;
+	}
+
+	.nav__menu--tem a {
+		color: white;
+	}
+
+	.nav__menu--tem + .nav__menu--tem {
+		margin-top: 2em;
+	}
+
+	.hero {
+		padding: 3em 0;
+	}
+
+	.x__icon {
+		height: 3px;
+		width: 30px;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		background-color: var(--gold);
+		transform: rotate(45deg);
+	}
+
+	.x__icon::after {
+		position: absolute;
+		content: '';
+		height: 3px;
+		width: 30px;
+		background-color: var(--gold);
+		transform: rotate(90deg);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.nav__mobile,
+	.hamburger__menu {
+		display: none;
+	}
+
+	.nav__menu ul,
+	nav > .container,
+	.nav__social ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .nav__social {
+	// 	width: 15%;
+	// }
+
+	.nav__social--item + .nav__social--item {
+		margin-left: 1em;
+	}
+
+	.nav__menu--tem a {
+		color: var(--black);
+	}
+
+	.nav__menu--tem + .nav__menu--tem {
+		margin-left: 2em;
+	}
+
+	.hero {
+		padding: 10em 0;
+	}
+
+	.hero__text {
+		width: clamp(182px, 60vw, 500px);
+		margin-left: 3em;
+	}
+
+	.carac__grid {
+		padding-bottom: 13em;
+	}
+
+	.kaia__grid {
+		padding-bottom: 4em;
+		margin-top: -6em;
+	}
+
+	.kaia h2 {
+		margin-bottom: 1em;
+	}
+
+	.padding,
+	.ingredientes {
+		padding-bottom: 10em;
+	}
+
+	.contacto .kaia__grid {
+		padding: 0;
+		margin-bottom: -10em;
+	}
+}

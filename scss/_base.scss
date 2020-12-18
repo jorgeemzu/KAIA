@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--gold: #d4b567;
+	--black: #3f434a;
+	--lightGold: #efe3c3;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img,
+svg {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	color: var(--black);
+	font-size: 18px;
+}
+
+h1 {
+	// font-size: clamp(1.5rem, 2.5vw, 2rem);
+	font-size: clamp(1.5rem, 4.5vw, 5rem);
+}
+
+h3 {
+	font-size: clamp(1rem, 5vw, 2rem);
+	width: 74%;
+	margin: 0 auto;
+	font-weight: 400;
+}
+
+h5,
+h2 {
+	font-size: clamp(2rem, 2vw, 2.5rem);
+	color: var(--black);
+	text-align: center;
+}
+
+h4 {
+	font-size: clamp(1.5rem, 5.5vw, 1.7rem);
+	font-weight: 400;
+}
+
+p {
+	// font-size: clamp(1.2rem, 2vw, 2rem);
+	font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	position: relative;
+}
+
+.overflow {
+	overflow-x: hidden;
+}
+
+.icon__svg {
+	width: clamp(30px, 10vw, 35px);
+	height: clamp(30px, 10vw, 35px);
+}
+
+.gold__text {
+	color: var(--gold);
+}
+
+.gold__btn {
+	padding: 0.3em 1em;
+	background-color: var(--gold);
+	color: white;
+	border-radius: 30px;
+	display: inline-block;
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	transition: 1s all;
+	border: solid 2px var(--gold);
+}
+
+.gold__btn:hover {
+	background-color: transparent;
+	color: var(--black);
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.icon__svg {
+	fill: var(--gold);
+	transition: 0.6s all;
+}
+
+.icon__svg:hover {
+	fill: var(--black);
+}
+
+.wave__white,
+.wave__gold {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	left: 0;
+	right: 0;
+}
+
+.wave__gold {
+	fill: var(--lightGold);
+	display: block;
+}
+
+.wave__black {
+	fill: var(--black);
+	display: block;
+}
+
+.padding {
+	position: relative;
+	z-index: 100;
+}
+
+.menu__appear {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.fade__left {
+	transform: translateX(30px);
+	opacity: 0;
+	transition: 1s all;
+}
+
+.fade__right {
+	transform: translateX(-30px);
+	opacity: 0;
+	transition: 1s all;
+}
+
+.fade__in {
+	opacity: 0;
+}
+
+.fade__apear {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

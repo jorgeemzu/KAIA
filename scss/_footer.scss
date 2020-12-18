@@ -1,0 +1,37 @@
+footer {
+	background-color: var(--black);
+	padding-bottom: 2em;
+}
+
+footer .logo {
+	width: clamp(100px, 30vw, 150px);
+	margin: 0 auto;
+}
+
+.nav__social.footer {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.nav__social.footer ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3em 0;
+}
+
+.nav__social--item.footer {
+	margin-top: 0;
+}
+
+.atribution {
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+.nav__social--item.footer:hover {
+	.icon__svg {
+		fill: white;
+	}
+}
