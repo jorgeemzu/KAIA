@@ -5,16 +5,6 @@ header {
 nav {
   background-color: white;
   padding: 1em 0;
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 nav .container {
@@ -81,16 +71,6 @@ nav .logo {
   width: clamp(182px, 60vw, 300px);
   position: relative;
   z-index: 10;
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 .hero__text .gold__btn {

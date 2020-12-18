@@ -5,11 +5,11 @@ header {
 nav {
 	background-color: white;
 	padding: 1em 0;
-	animation-name: appear;
-	animation-fill-mode: forwards;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 2s;
+	// animation-name: appear;
+	// animation-fill-mode: forwards;
+	// animation-duration: 2s;
+	// animation-timing-function: linear;
+	// animation-delay: 2s;
 }
 
 nav .container {
@@ -65,11 +65,11 @@ nav .logo {
 	width: clamp(182px, 60vw, 300px);
 	position: relative;
 	z-index: 10;
-	animation-name: appear;
-	animation-fill-mode: forwards;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 2s;
+	// animation-name: appear;
+	// animation-fill-mode: forwards;
+	// animation-duration: 2s;
+	// animation-timing-function: linear;
+	// animation-delay: 2s;
 }
 
 .hero__text .gold__btn {
