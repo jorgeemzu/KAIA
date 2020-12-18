@@ -1,0 +1,28 @@
+.product__header {
+	margin: 3em 0;
+}
+
+.nuestros__productos {
+	position: relative;
+	z-index: 10;
+	padding-bottom: 3em;
+}
+
+.nuestros__productos h3 {
+	margin-left: 0;
+	margin-bottom: 2em;
+	font-weight: 700;
+}
+
+.goldbg {
+	background-color: var(--lightGold);
+	padding-bottom: 4em;
+	padding-top: 2em;
+	position: relative;
+
+	p {
+		width: clamp(300px, 70vw, 800px);
+		text-align: center;
+		margin: 0 auto;
+	}
+}

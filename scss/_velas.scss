@@ -23,11 +23,43 @@
 	margin-bottom: 7em;
 }
 
-.vela__img {
+.product__img {
 	border-radius: 30px;
 	overflow: hidden;
+	border: solid 3px transparent;
+	transition: 1s all;
+
+	&:hover {
+		border: solid 3px var(--gold);
+	}
+}
+
+.product__img img {
+	display: block;
+	transition: 2s all;
+
+	&:hover {
+		transform: scale(1.3);
+	}
+}
+
+.product__list--item {
 	position: relative;
-	height: clamp(500px, 60vh, 800px);
+}
+
+.product__list--item::after {
+	content: '\2022';
+	color: var(--gold);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+	position: absolute;
+	left: 0;
+}
+
+.product__list--item + .product__list--item {
+	margin-top: 1em;
 }
 
 .beneficios {
@@ -49,7 +81,7 @@
 
 .velas .gold__btn,
 .jabones .gold__btn {
-	width: clamp(130px, 40vw, 250px);
+	width: clamp(130px, 80vw, 250px);
 	margin: 0 auto;
 	display: block;
 	font-size: clamp(1.5rem, 1vw, 2rem);

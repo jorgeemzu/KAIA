@@ -15,7 +15,7 @@ navBtn.addEventListener('click', showMenu);
 navClose.addEventListener('click', showMenu);
 
 const appearOptions = {
-    threshold: 0.1,
+    threshold: 0.5,
     rootMargin: "0px 0px 50px 0px"
 }
 
