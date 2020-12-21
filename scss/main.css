@@ -343,7 +343,8 @@ form .gold__btn {
   padding-bottom: 3em;
 }
 
-.nuestros__productos h3 {
+.nuestros__productos h3,
+.beneficios__main h3 {
   margin-left: 0;
   margin-bottom: 2em;
   font-weight: 700;
@@ -576,6 +577,7 @@ h4 {
 
 p {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: justify;
 }
 
 ul {
@@ -717,5 +719,29 @@ main {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.beneficios__main {
+  margin-top: 4em;
+}
+
+.beneficios__main h2 {
+  margin-bottom: 3em;
+}
+
+.beneficios__main h3 {
+  margin: 0 0 1em 0;
+}
+
+.beneficio + .beneficio {
+  margin-top: 3em;
+}
+
+.beneficios__main section {
+  margin-bottom: 4em;
+}
+
+.aromaterapia {
+  margin-bottom: 3em;
 }
 /*# sourceMappingURL=main.css.map */
